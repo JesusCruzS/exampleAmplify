@@ -9,6 +9,13 @@ import SwiftUI
 
 @main
 struct TodoApp: App {
+    
+    @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
+    
+    init() {
+        Resolver.shared.injectModules()
+    }
+    
     var body: some Scene {
         WindowGroup {
             ContentView()

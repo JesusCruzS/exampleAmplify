@@ -7,19 +7,77 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		03FEB05F6C44CD26EAC8257B /* Todo+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52562D55C92FE7EA69211E4A /* Todo+Schema.swift */; };
+		5E3EE7792BD6916F002CD386 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E3EE7782BD6916F002CD386 /* SignInView.swift */; };
+		5E3EE77B2BD691F1002CD386 /* SignInViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E3EE77A2BD691F1002CD386 /* SignInViewModel.swift */; };
 		5E400F852BD1E8D80046FA78 /* TodoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E400F842BD1E8D80046FA78 /* TodoApp.swift */; };
 		5E400F872BD1E8D80046FA78 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E400F862BD1E8D80046FA78 /* ContentView.swift */; };
 		5E400F892BD1E8D90046FA78 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E400F882BD1E8D90046FA78 /* Assets.xcassets */; };
 		5E400F8D2BD1E8D90046FA78 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E400F8C2BD1E8D90046FA78 /* Preview Assets.xcassets */; };
+		5E400F952BD1EA620046FA78 /* AWSAPIPlugin in Frameworks */ = {isa = PBXBuildFile; productRef = 5E400F942BD1EA620046FA78 /* AWSAPIPlugin */; };
+		5E400F972BD1EA620046FA78 /* AWSCloudWatchLoggingPlugin in Frameworks */ = {isa = PBXBuildFile; productRef = 5E400F962BD1EA620046FA78 /* AWSCloudWatchLoggingPlugin */; };
+		5E400F992BD1EA620046FA78 /* AWSCognitoAuthPlugin in Frameworks */ = {isa = PBXBuildFile; productRef = 5E400F982BD1EA620046FA78 /* AWSCognitoAuthPlugin */; };
+		5E400F9B2BD1EA620046FA78 /* AWSDataStorePlugin in Frameworks */ = {isa = PBXBuildFile; productRef = 5E400F9A2BD1EA620046FA78 /* AWSDataStorePlugin */; };
+		5E400F9D2BD1EA620046FA78 /* AWSLocationGeoPlugin in Frameworks */ = {isa = PBXBuildFile; productRef = 5E400F9C2BD1EA620046FA78 /* AWSLocationGeoPlugin */; };
+		5E400F9F2BD1EA620046FA78 /* AWSPinpointAnalyticsPlugin in Frameworks */ = {isa = PBXBuildFile; productRef = 5E400F9E2BD1EA620046FA78 /* AWSPinpointAnalyticsPlugin */; };
+		5E400FA12BD1EA620046FA78 /* AWSPinpointPushNotificationsPlugin in Frameworks */ = {isa = PBXBuildFile; productRef = 5E400FA02BD1EA620046FA78 /* AWSPinpointPushNotificationsPlugin */; };
+		5E400FA32BD1EA620046FA78 /* AWSPluginsCore in Frameworks */ = {isa = PBXBuildFile; productRef = 5E400FA22BD1EA620046FA78 /* AWSPluginsCore */; };
+		5E400FA52BD1EA620046FA78 /* AWSPredictionsPlugin in Frameworks */ = {isa = PBXBuildFile; productRef = 5E400FA42BD1EA620046FA78 /* AWSPredictionsPlugin */; };
+		5E400FA72BD1EA620046FA78 /* AWSS3StoragePlugin in Frameworks */ = {isa = PBXBuildFile; productRef = 5E400FA62BD1EA620046FA78 /* AWSS3StoragePlugin */; };
+		5E400FA92BD1EA620046FA78 /* Amplify in Frameworks */ = {isa = PBXBuildFile; productRef = 5E400FA82BD1EA620046FA78 /* Amplify */; };
+		5E400FAB2BD1EA620046FA78 /* CoreMLPredictionsPlugin in Frameworks */ = {isa = PBXBuildFile; productRef = 5E400FAA2BD1EA620046FA78 /* CoreMLPredictionsPlugin */; };
+		5E482F7B2BDABB730088AC82 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E482F7A2BDABB730088AC82 /* AppDelegate.swift */; };
+		5E482F802BDAC0740088AC82 /* TodoRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E482F7F2BDAC0740088AC82 /* TodoRepositoryProtocol.swift */; };
+		5E482F842BDAC1810088AC82 /* GetTodosUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E482F832BDAC1810088AC82 /* GetTodosUseCase.swift */; };
+		5E482F862BDAC1C40088AC82 /* GetTodosUseCaseProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E482F852BDAC1C40088AC82 /* GetTodosUseCaseProtocol.swift */; };
+		5E482F8B2BDAC5070088AC82 /* TodoRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E482F8A2BDAC5070088AC82 /* TodoRepository.swift */; };
+		5E482F8E2BDAE5A70088AC82 /* Swinject in Frameworks */ = {isa = PBXBuildFile; productRef = 5E482F8D2BDAE5A70088AC82 /* Swinject */; };
+		5E482F902BDAE5A70088AC82 /* Swinject-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = 5E482F8F2BDAE5A70088AC82 /* Swinject-Dynamic */; };
+		5E482F942BDAE5ED0088AC82 /* Resolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E482F932BDAE5ED0088AC82 /* Resolver.swift */; };
+		5E482F962BDAEEF30088AC82 /* CreateTodoUseCaseProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E482F952BDAEEF30088AC82 /* CreateTodoUseCaseProtocol.swift */; };
+		5E482F982BDAEF230088AC82 /* CreateTodoUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E482F972BDAEF230088AC82 /* CreateTodoUseCase.swift */; };
+		5E482F9A2BDBE4320088AC82 /* CreateTodoSubscriptionProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E482F992BDBE4320088AC82 /* CreateTodoSubscriptionProtocol.swift */; };
+		5E482F9C2BDBE58F0088AC82 /* CreateTodoSubscriptionUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E482F9B2BDBE58F0088AC82 /* CreateTodoSubscriptionUseCase.swift */; };
+		5E9C98EF2BD2B66800567323 /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E9C98EE2BD2B66800567323 /* SignUpViewModel.swift */; };
+		5E9C98F32BD2B9A300567323 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E9C98F22BD2B9A300567323 /* SignUpView.swift */; };
+		5EDDBE182BD7EC0500747E46 /* TodoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EDDBE172BD7EC0500747E46 /* TodoViewModel.swift */; };
+		5EDDBE1A2BD7EC7100747E46 /* TodoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EDDBE192BD7EC7100747E46 /* TodoView.swift */; };
+		B01F2D3692084EA09BE76EEF /* AmplifyModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE57C1016216F800136C416E /* AmplifyModels.swift */; };
+		DF5CC7A02F9782DD428F69D3 /* Priority.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E70E03DA5170012A5633C6B /* Priority.swift */; };
+		F84C96058A65383B3012D640 /* Todo.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0B91705BC3AF072A8F973DF /* Todo.swift */; };
+		FD6BAABE3B974B3E3CD1B4C0 /* amplifyconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = 3A783B0590614EF7D39BA591 /* amplifyconfiguration.json */; };
+		FF48C43AEAFB8C1BB7559FB2 /* awsconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = 7B58E9C1D8B278510ED9EAEF /* awsconfiguration.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3A783B0590614EF7D39BA591 /* amplifyconfiguration.json */ = {isa = PBXFileReference; explicitFileType = text.json; path = amplifyconfiguration.json; sourceTree = "<group>"; };
+		52562D55C92FE7EA69211E4A /* Todo+Schema.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = "Todo+Schema.swift"; path = "amplify/generated/models/Todo+Schema.swift"; sourceTree = "<group>"; };
+		5E3EE7782BD6916F002CD386 /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
+		5E3EE77A2BD691F1002CD386 /* SignInViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewModel.swift; sourceTree = "<group>"; };
 		5E400F812BD1E8D80046FA78 /* Todo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Todo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E400F842BD1E8D80046FA78 /* TodoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoApp.swift; sourceTree = "<group>"; };
 		5E400F862BD1E8D80046FA78 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		5E400F882BD1E8D90046FA78 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5E400F8A2BD1E8D90046FA78 /* Todo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Todo.entitlements; sourceTree = "<group>"; };
 		5E400F8C2BD1E8D90046FA78 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		5E482F7A2BDABB730088AC82 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5E482F7F2BDAC0740088AC82 /* TodoRepositoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoRepositoryProtocol.swift; sourceTree = "<group>"; };
+		5E482F832BDAC1810088AC82 /* GetTodosUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetTodosUseCase.swift; sourceTree = "<group>"; };
+		5E482F852BDAC1C40088AC82 /* GetTodosUseCaseProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetTodosUseCaseProtocol.swift; sourceTree = "<group>"; };
+		5E482F8A2BDAC5070088AC82 /* TodoRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoRepository.swift; sourceTree = "<group>"; };
+		5E482F932BDAE5ED0088AC82 /* Resolver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resolver.swift; sourceTree = "<group>"; };
+		5E482F952BDAEEF30088AC82 /* CreateTodoUseCaseProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateTodoUseCaseProtocol.swift; sourceTree = "<group>"; };
+		5E482F972BDAEF230088AC82 /* CreateTodoUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateTodoUseCase.swift; sourceTree = "<group>"; };
+		5E482F992BDBE4320088AC82 /* CreateTodoSubscriptionProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateTodoSubscriptionProtocol.swift; sourceTree = "<group>"; };
+		5E482F9B2BDBE58F0088AC82 /* CreateTodoSubscriptionUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateTodoSubscriptionUseCase.swift; sourceTree = "<group>"; };
+		5E70E03DA5170012A5633C6B /* Priority.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = Priority.swift; path = amplify/generated/models/Priority.swift; sourceTree = "<group>"; };
+		5E9C98EE2BD2B66800567323 /* SignUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewModel.swift; sourceTree = "<group>"; };
+		5E9C98F22BD2B9A300567323 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
+		5EDDBE172BD7EC0500747E46 /* TodoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoViewModel.swift; sourceTree = "<group>"; };
+		5EDDBE192BD7EC7100747E46 /* TodoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoView.swift; sourceTree = "<group>"; };
+		7B58E9C1D8B278510ED9EAEF /* awsconfiguration.json */ = {isa = PBXFileReference; explicitFileType = text.json; path = awsconfiguration.json; sourceTree = "<group>"; };
+		CE57C1016216F800136C416E /* AmplifyModels.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = AmplifyModels.swift; path = amplify/generated/models/AmplifyModels.swift; sourceTree = "<group>"; };
+		E0B91705BC3AF072A8F973DF /* Todo.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = Todo.swift; path = amplify/generated/models/Todo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,6 +85,20 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5E400F952BD1EA620046FA78 /* AWSAPIPlugin in Frameworks */,
+				5E482F902BDAE5A70088AC82 /* Swinject-Dynamic in Frameworks */,
+				5E400F9F2BD1EA620046FA78 /* AWSPinpointAnalyticsPlugin in Frameworks */,
+				5E400F9D2BD1EA620046FA78 /* AWSLocationGeoPlugin in Frameworks */,
+				5E400F972BD1EA620046FA78 /* AWSCloudWatchLoggingPlugin in Frameworks */,
+				5E400FA92BD1EA620046FA78 /* Amplify in Frameworks */,
+				5E400FA52BD1EA620046FA78 /* AWSPredictionsPlugin in Frameworks */,
+				5E400FA72BD1EA620046FA78 /* AWSS3StoragePlugin in Frameworks */,
+				5E400FA32BD1EA620046FA78 /* AWSPluginsCore in Frameworks */,
+				5E400FAB2BD1EA620046FA78 /* CoreMLPredictionsPlugin in Frameworks */,
+				5E400F992BD1EA620046FA78 /* AWSCognitoAuthPlugin in Frameworks */,
+				5E400FA12BD1EA620046FA78 /* AWSPinpointPushNotificationsPlugin in Frameworks */,
+				5E400F9B2BD1EA620046FA78 /* AWSDataStorePlugin in Frameworks */,
+				5E482F8E2BDAE5A70088AC82 /* Swinject in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -38,6 +110,8 @@
 			children = (
 				5E400F832BD1E8D80046FA78 /* Todo */,
 				5E400F822BD1E8D80046FA78 /* Products */,
+				F65476D26695C4A630EFBE30 /* AmplifyConfig */,
+				AA7B43683E79DB7EC2FCB61E /* AmplifyModels */,
 			);
 			sourceTree = "<group>";
 		};
@@ -52,8 +126,13 @@
 		5E400F832BD1E8D80046FA78 /* Todo */ = {
 			isa = PBXGroup;
 			children = (
+				5E482F912BDAE5C80088AC82 /* Core */,
+				5E482F7D2BDAC02B0088AC82 /* Domain */,
+				5E482F7C2BDABDCC0088AC82 /* Data */,
+				5E9C98EB2BD2B2C000567323 /* Presentation */,
 				5E400F842BD1E8D80046FA78 /* TodoApp.swift */,
 				5E400F862BD1E8D80046FA78 /* ContentView.swift */,
+				5E482F7A2BDABB730088AC82 /* AppDelegate.swift */,
 				5E400F882BD1E8D90046FA78 /* Assets.xcassets */,
 				5E400F8A2BD1E8D90046FA78 /* Todo.entitlements */,
 				5E400F8B2BD1E8D90046FA78 /* Preview Content */,
@@ -67,6 +146,173 @@
 				5E400F8C2BD1E8D90046FA78 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		5E482F7C2BDABDCC0088AC82 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				5E482F882BDAC4820088AC82 /* TodoData */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		5E482F7D2BDAC02B0088AC82 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				5E482F872BDAC4620088AC82 /* TodoDomain */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		5E482F7E2BDAC04D0088AC82 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				5E482F7F2BDAC0740088AC82 /* TodoRepositoryProtocol.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		5E482F812BDAC1360088AC82 /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+				5E482F822BDAC1590088AC82 /* Protocols */,
+				5E482F832BDAC1810088AC82 /* GetTodosUseCase.swift */,
+				5E482F972BDAEF230088AC82 /* CreateTodoUseCase.swift */,
+				5E482F9B2BDBE58F0088AC82 /* CreateTodoSubscriptionUseCase.swift */,
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
+		5E482F822BDAC1590088AC82 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				5E482F852BDAC1C40088AC82 /* GetTodosUseCaseProtocol.swift */,
+				5E482F952BDAEEF30088AC82 /* CreateTodoUseCaseProtocol.swift */,
+				5E482F992BDBE4320088AC82 /* CreateTodoSubscriptionProtocol.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		5E482F872BDAC4620088AC82 /* TodoDomain */ = {
+			isa = PBXGroup;
+			children = (
+				5E482F7E2BDAC04D0088AC82 /* Repositories */,
+				5E482F812BDAC1360088AC82 /* UseCases */,
+			);
+			path = TodoDomain;
+			sourceTree = "<group>";
+		};
+		5E482F882BDAC4820088AC82 /* TodoData */ = {
+			isa = PBXGroup;
+			children = (
+				5E482F892BDAC4910088AC82 /* Repositories */,
+			);
+			path = TodoData;
+			sourceTree = "<group>";
+		};
+		5E482F892BDAC4910088AC82 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				5E482F8A2BDAC5070088AC82 /* TodoRepository.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		5E482F912BDAE5C80088AC82 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				5E482F922BDAE5D60088AC82 /* DI */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		5E482F922BDAE5D60088AC82 /* DI */ = {
+			isa = PBXGroup;
+			children = (
+				5E482F932BDAE5ED0088AC82 /* Resolver.swift */,
+			);
+			path = DI;
+			sourceTree = "<group>";
+		};
+		5E9C98EA2BD2B2A300567323 /* AuthPresentation */ = {
+			isa = PBXGroup;
+			children = (
+				5E9C98ED2BD2B4BF00567323 /* Views */,
+				5E9C98EC2BD2B4B600567323 /* ViewModels */,
+			);
+			path = AuthPresentation;
+			sourceTree = "<group>";
+		};
+		5E9C98EB2BD2B2C000567323 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				5EB1A4732BD70C5D00DC1036 /* ToDoPresentation */,
+				5E9C98EA2BD2B2A300567323 /* AuthPresentation */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		5E9C98EC2BD2B4B600567323 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				5E9C98EE2BD2B66800567323 /* SignUpViewModel.swift */,
+				5E3EE77A2BD691F1002CD386 /* SignInViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		5E9C98ED2BD2B4BF00567323 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				5E9C98F22BD2B9A300567323 /* SignUpView.swift */,
+				5E3EE7782BD6916F002CD386 /* SignInView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		5EB1A4732BD70C5D00DC1036 /* ToDoPresentation */ = {
+			isa = PBXGroup;
+			children = (
+				5EDDBE162BD7EBE100747E46 /* ViewModels */,
+				5EDDBE152BD7EBC000747E46 /* Views */,
+			);
+			path = ToDoPresentation;
+			sourceTree = "<group>";
+		};
+		5EDDBE152BD7EBC000747E46 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				5EDDBE192BD7EC7100747E46 /* TodoView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		5EDDBE162BD7EBE100747E46 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				5EDDBE172BD7EC0500747E46 /* TodoViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		AA7B43683E79DB7EC2FCB61E /* AmplifyModels */ = {
+			isa = PBXGroup;
+			children = (
+				CE57C1016216F800136C416E /* AmplifyModels.swift */,
+				5E70E03DA5170012A5633C6B /* Priority.swift */,
+				52562D55C92FE7EA69211E4A /* Todo+Schema.swift */,
+				E0B91705BC3AF072A8F973DF /* Todo.swift */,
+			);
+			name = AmplifyModels;
+			sourceTree = "<group>";
+		};
+		F65476D26695C4A630EFBE30 /* AmplifyConfig */ = {
+			isa = PBXGroup;
+			children = (
+				7B58E9C1D8B278510ED9EAEF /* awsconfiguration.json */,
+				3A783B0590614EF7D39BA591 /* amplifyconfiguration.json */,
+			);
+			name = AmplifyConfig;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -85,6 +331,22 @@
 			dependencies = (
 			);
 			name = Todo;
+			packageProductDependencies = (
+				5E400F942BD1EA620046FA78 /* AWSAPIPlugin */,
+				5E400F962BD1EA620046FA78 /* AWSCloudWatchLoggingPlugin */,
+				5E400F982BD1EA620046FA78 /* AWSCognitoAuthPlugin */,
+				5E400F9A2BD1EA620046FA78 /* AWSDataStorePlugin */,
+				5E400F9C2BD1EA620046FA78 /* AWSLocationGeoPlugin */,
+				5E400F9E2BD1EA620046FA78 /* AWSPinpointAnalyticsPlugin */,
+				5E400FA02BD1EA620046FA78 /* AWSPinpointPushNotificationsPlugin */,
+				5E400FA22BD1EA620046FA78 /* AWSPluginsCore */,
+				5E400FA42BD1EA620046FA78 /* AWSPredictionsPlugin */,
+				5E400FA62BD1EA620046FA78 /* AWSS3StoragePlugin */,
+				5E400FA82BD1EA620046FA78 /* Amplify */,
+				5E400FAA2BD1EA620046FA78 /* CoreMLPredictionsPlugin */,
+				5E482F8D2BDAE5A70088AC82 /* Swinject */,
+				5E482F8F2BDAE5A70088AC82 /* Swinject-Dynamic */,
+			);
 			productName = Todo;
 			productReference = 5E400F812BD1E8D80046FA78 /* Todo.app */;
 			productType = "com.apple.product-type.application";
@@ -113,6 +375,10 @@
 				Base,
 			);
 			mainGroup = 5E400F782BD1E8D80046FA78;
+			packageReferences = (
+				5E400F932BD1EA620046FA78 /* XCRemoteSwiftPackageReference "amplify-swift" */,
+				5E482F8C2BDAE5A70088AC82 /* XCRemoteSwiftPackageReference "Swinject" */,
+			);
 			productRefGroup = 5E400F822BD1E8D80046FA78 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -129,6 +395,8 @@
 			files = (
 				5E400F8D2BD1E8D90046FA78 /* Preview Assets.xcassets in Resources */,
 				5E400F892BD1E8D90046FA78 /* Assets.xcassets in Resources */,
+				FF48C43AEAFB8C1BB7559FB2 /* awsconfiguration.json in Resources */,
+				FD6BAABE3B974B3E3CD1B4C0 /* amplifyconfiguration.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,8 +407,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5E3EE7792BD6916F002CD386 /* SignInView.swift in Sources */,
+				5E482F9A2BDBE4320088AC82 /* CreateTodoSubscriptionProtocol.swift in Sources */,
 				5E400F872BD1E8D80046FA78 /* ContentView.swift in Sources */,
 				5E400F852BD1E8D80046FA78 /* TodoApp.swift in Sources */,
+				5E482F942BDAE5ED0088AC82 /* Resolver.swift in Sources */,
+				B01F2D3692084EA09BE76EEF /* AmplifyModels.swift in Sources */,
+				5E3EE77B2BD691F1002CD386 /* SignInViewModel.swift in Sources */,
+				5E482F802BDAC0740088AC82 /* TodoRepositoryProtocol.swift in Sources */,
+				5E482F9C2BDBE58F0088AC82 /* CreateTodoSubscriptionUseCase.swift in Sources */,
+				DF5CC7A02F9782DD428F69D3 /* Priority.swift in Sources */,
+				5EDDBE1A2BD7EC7100747E46 /* TodoView.swift in Sources */,
+				5E482F862BDAC1C40088AC82 /* GetTodosUseCaseProtocol.swift in Sources */,
+				5E9C98F32BD2B9A300567323 /* SignUpView.swift in Sources */,
+				5E482F842BDAC1810088AC82 /* GetTodosUseCase.swift in Sources */,
+				5E482F7B2BDABB730088AC82 /* AppDelegate.swift in Sources */,
+				03FEB05F6C44CD26EAC8257B /* Todo+Schema.swift in Sources */,
+				F84C96058A65383B3012D640 /* Todo.swift in Sources */,
+				5E482F8B2BDAC5070088AC82 /* TodoRepository.swift in Sources */,
+				5EDDBE182BD7EC0500747E46 /* TodoViewModel.swift in Sources */,
+				5E482F982BDAEF230088AC82 /* CreateTodoUseCase.swift in Sources */,
+				5E9C98EF2BD2B66800567323 /* SignUpViewModel.swift in Sources */,
+				5E482F962BDAEEF30088AC82 /* CreateTodoUseCaseProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -359,6 +647,98 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		5E400F932BD1EA620046FA78 /* XCRemoteSwiftPackageReference "amplify-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/aws-amplify/amplify-swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.29.2;
+			};
+		};
+		5E482F8C2BDAE5A70088AC82 /* XCRemoteSwiftPackageReference "Swinject" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Swinject/Swinject";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.8.5;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		5E400F942BD1EA620046FA78 /* AWSAPIPlugin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5E400F932BD1EA620046FA78 /* XCRemoteSwiftPackageReference "amplify-swift" */;
+			productName = AWSAPIPlugin;
+		};
+		5E400F962BD1EA620046FA78 /* AWSCloudWatchLoggingPlugin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5E400F932BD1EA620046FA78 /* XCRemoteSwiftPackageReference "amplify-swift" */;
+			productName = AWSCloudWatchLoggingPlugin;
+		};
+		5E400F982BD1EA620046FA78 /* AWSCognitoAuthPlugin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5E400F932BD1EA620046FA78 /* XCRemoteSwiftPackageReference "amplify-swift" */;
+			productName = AWSCognitoAuthPlugin;
+		};
+		5E400F9A2BD1EA620046FA78 /* AWSDataStorePlugin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5E400F932BD1EA620046FA78 /* XCRemoteSwiftPackageReference "amplify-swift" */;
+			productName = AWSDataStorePlugin;
+		};
+		5E400F9C2BD1EA620046FA78 /* AWSLocationGeoPlugin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5E400F932BD1EA620046FA78 /* XCRemoteSwiftPackageReference "amplify-swift" */;
+			productName = AWSLocationGeoPlugin;
+		};
+		5E400F9E2BD1EA620046FA78 /* AWSPinpointAnalyticsPlugin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5E400F932BD1EA620046FA78 /* XCRemoteSwiftPackageReference "amplify-swift" */;
+			productName = AWSPinpointAnalyticsPlugin;
+		};
+		5E400FA02BD1EA620046FA78 /* AWSPinpointPushNotificationsPlugin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5E400F932BD1EA620046FA78 /* XCRemoteSwiftPackageReference "amplify-swift" */;
+			productName = AWSPinpointPushNotificationsPlugin;
+		};
+		5E400FA22BD1EA620046FA78 /* AWSPluginsCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5E400F932BD1EA620046FA78 /* XCRemoteSwiftPackageReference "amplify-swift" */;
+			productName = AWSPluginsCore;
+		};
+		5E400FA42BD1EA620046FA78 /* AWSPredictionsPlugin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5E400F932BD1EA620046FA78 /* XCRemoteSwiftPackageReference "amplify-swift" */;
+			productName = AWSPredictionsPlugin;
+		};
+		5E400FA62BD1EA620046FA78 /* AWSS3StoragePlugin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5E400F932BD1EA620046FA78 /* XCRemoteSwiftPackageReference "amplify-swift" */;
+			productName = AWSS3StoragePlugin;
+		};
+		5E400FA82BD1EA620046FA78 /* Amplify */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5E400F932BD1EA620046FA78 /* XCRemoteSwiftPackageReference "amplify-swift" */;
+			productName = Amplify;
+		};
+		5E400FAA2BD1EA620046FA78 /* CoreMLPredictionsPlugin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5E400F932BD1EA620046FA78 /* XCRemoteSwiftPackageReference "amplify-swift" */;
+			productName = CoreMLPredictionsPlugin;
+		};
+		5E482F8D2BDAE5A70088AC82 /* Swinject */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5E482F8C2BDAE5A70088AC82 /* XCRemoteSwiftPackageReference "Swinject" */;
+			productName = Swinject;
+		};
+		5E482F8F2BDAE5A70088AC82 /* Swinject-Dynamic */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5E482F8C2BDAE5A70088AC82 /* XCRemoteSwiftPackageReference "Swinject" */;
+			productName = "Swinject-Dynamic";
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 5E400F792BD1E8D80046FA78 /* Project object */;
 }
